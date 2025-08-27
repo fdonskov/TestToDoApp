@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		93D071A12E5F6D8500A793B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0719B2E5F6D8500A793B2 /* SceneDelegate.swift */; };
 		93D071A22E5F6D8500A793B2 /* TestToDoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93D0719C2E5F6D8500A793B2 /* TestToDoApp.xcdatamodeld */; };
-		93D071A32E5F6D8500A793B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0719D2E5F6D8500A793B2 /* ViewController.swift */; };
+		93D071A32E5F6D8500A793B2 /* TodosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0719D2E5F6D8500A793B2 /* TodosListViewController.swift */; };
 		93D071A42E5F6D8500A793B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D071962E5F6D8500A793B2 /* AppDelegate.swift */; };
 		93D071A52E5F6D8500A793B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D071992E5F6D8500A793B2 /* LaunchScreen.storyboard */; };
 		93D071A72E5F6D8500A793B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D071972E5F6D8500A793B2 /* Assets.xcassets */; };
 		93D071AA2E5F6D8500A793B2 /* TestToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D071A92E5F6D8500A793B2 /* TestToDoAppTests.swift */; };
 		93D071AD2E5F6D8500A793B2 /* TestToDoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D071AC2E5F6D8500A793B2 /* TestToDoAppUITestsLaunchTests.swift */; };
 		93D071AE2E5F6D8500A793B2 /* TestToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D071AB2E5F6D8500A793B2 /* TestToDoAppUITests.swift */; };
+		93D071BD2E5F720C00A793B2 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D071BC2E5F720C00A793B2 /* TodoModel.swift */; };
+		93D071BF2E5F721500A793B2 /* TodosListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D071BE2E5F721500A793B2 /* TodosListInteractor.swift */; };
+		93D071C12E5F721C00A793B2 /* TodosListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D071C02E5F721C00A793B2 /* TodosListPresenter.swift */; };
+		93D071C32E5F722300A793B2 /* TodosListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D071C22E5F722300A793B2 /* TodosListRouter.swift */; };
+		93D071C52E5F722B00A793B2 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D071C42E5F722B00A793B2 /* TodoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +48,17 @@
 		93D071972E5F6D8500A793B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93D071982E5F6D8500A793B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93D0719B2E5F6D8500A793B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93D0719D2E5F6D8500A793B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93D0719D2E5F6D8500A793B2 /* TodosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosListViewController.swift; sourceTree = "<group>"; };
 		93D0719F2E5F6D8500A793B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93D071A02E5F6D8500A793B2 /* TestToDoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestToDoApp.xcdatamodel; sourceTree = "<group>"; };
 		93D071A92E5F6D8500A793B2 /* TestToDoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToDoAppTests.swift; sourceTree = "<group>"; };
 		93D071AB2E5F6D8500A793B2 /* TestToDoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToDoAppUITests.swift; sourceTree = "<group>"; };
 		93D071AC2E5F6D8500A793B2 /* TestToDoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToDoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93D071BC2E5F720C00A793B2 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		93D071BE2E5F721500A793B2 /* TodosListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosListInteractor.swift; sourceTree = "<group>"; };
+		93D071C02E5F721C00A793B2 /* TodosListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosListPresenter.swift; sourceTree = "<group>"; };
+		93D071C22E5F722300A793B2 /* TodosListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosListRouter.swift; sourceTree = "<group>"; };
+		93D071C42E5F722B00A793B2 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,8 @@
 		93D071AF2E5F6EE000A793B2 /* TestToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				93D071962E5F6D8500A793B2 /* AppDelegate.swift */,
-				93D0719B2E5F6D8500A793B2 /* SceneDelegate.swift */,
-				93D071972E5F6D8500A793B2 /* Assets.xcassets */,
-				93D071982E5F6D8500A793B2 /* Info.plist */,
-				93D071992E5F6D8500A793B2 /* LaunchScreen.storyboard */,
-				93D0719C2E5F6D8500A793B2 /* TestToDoApp.xcdatamodeld */,
-				93D0719D2E5F6D8500A793B2 /* ViewController.swift */,
+				93D071B42E5F711100A793B2 /* Resources */,
+				93D071B52E5F711700A793B2 /* Sources */,
 			);
 			path = TestToDoApp;
 			sourceTree = "<group>";
@@ -125,6 +130,112 @@
 				93D071AC2E5F6D8500A793B2 /* TestToDoAppUITestsLaunchTests.swift */,
 			);
 			path = TestToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		93D071B22E5F70F800A793B2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				93D071B82E5F71D300A793B2 /* TodosListScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		93D071B32E5F70FC00A793B2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				93D0719C2E5F6D8500A793B2 /* TestToDoApp.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		93D071B42E5F711100A793B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93D071962E5F6D8500A793B2 /* AppDelegate.swift */,
+				93D0719B2E5F6D8500A793B2 /* SceneDelegate.swift */,
+				93D071972E5F6D8500A793B2 /* Assets.xcassets */,
+				93D071992E5F6D8500A793B2 /* LaunchScreen.storyboard */,
+				93D071B62E5F712300A793B2 /* Configuration */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93D071B52E5F711700A793B2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				93D071B72E5F715300A793B2 /* App */,
+				93D071B32E5F70FC00A793B2 /* Data */,
+				93D071B22E5F70F800A793B2 /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		93D071B62E5F712300A793B2 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				93D071982E5F6D8500A793B2 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		93D071B72E5F715300A793B2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		93D071B82E5F71D300A793B2 /* TodosListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				93D071C82E5F723E00A793B2 /* Entity */,
+				93D071CE2E5F727500A793B2 /* Interactor */,
+				93D071CB2E5F726400A793B2 /* Presenter */,
+				93D071CA2E5F725E00A793B2 /* Router */,
+				93D071C92E5F725800A793B2 /* View */,
+			);
+			path = TodosListScreen;
+			sourceTree = "<group>";
+		};
+		93D071C82E5F723E00A793B2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				93D071BC2E5F720C00A793B2 /* TodoModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		93D071C92E5F725800A793B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93D0719D2E5F6D8500A793B2 /* TodosListViewController.swift */,
+				93D071C42E5F722B00A793B2 /* TodoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93D071CA2E5F725E00A793B2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				93D071C22E5F722300A793B2 /* TodosListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		93D071CB2E5F726400A793B2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				93D071C02E5F721C00A793B2 /* TodosListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		93D071CE2E5F727500A793B2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				93D071BE2E5F721500A793B2 /* TodosListInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +375,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D071BF2E5F721500A793B2 /* TodosListInteractor.swift in Sources */,
 				93D071A12E5F6D8500A793B2 /* SceneDelegate.swift in Sources */,
 				93D071A22E5F6D8500A793B2 /* TestToDoApp.xcdatamodeld in Sources */,
-				93D071A32E5F6D8500A793B2 /* ViewController.swift in Sources */,
+				93D071A32E5F6D8500A793B2 /* TodosListViewController.swift in Sources */,
+				93D071C52E5F722B00A793B2 /* TodoCell.swift in Sources */,
+				93D071C12E5F721C00A793B2 /* TodosListPresenter.swift in Sources */,
+				93D071BD2E5F720C00A793B2 /* TodoModel.swift in Sources */,
+				93D071C32E5F722300A793B2 /* TodosListRouter.swift in Sources */,
 				93D071A42E5F6D8500A793B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +440,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6U62DU83J9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestToDoApp/Info.plist;
+				INFOPLIST_FILE = TestToDoApp/Resources/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -352,7 +468,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6U62DU83J9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestToDoApp/Info.plist;
+				INFOPLIST_FILE = TestToDoApp/Resources/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
